@@ -21,7 +21,7 @@ import os
 import numpy as np
 import tensorflow as tf
 
-from keypose import utils
+import utils
 
 
 def get_tfrecords(dset_dir, split='train'):

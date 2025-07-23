@@ -27,7 +27,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-from keypose import utils
+import utils
 
 colors = 255 * plt.cm.get_cmap('rainbow')(np.linspace(0, 1.0, 10))[:, :3]
 

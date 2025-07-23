@@ -30,12 +30,12 @@ $ python3 -m keypose.trainer.py configs/bottle_0_t5 /tmp/model
 import os
 import sys
 
-from tensorflow import estimator as tf_estimator
+import tensorflow.estimator as tf_estimator
 from tensorflow import keras
 
-from keypose import estimator as est
-from keypose import inputs as inp
-from keypose import utils
+import estimator as est
+import inputs as inp
+import utils
 
 
 def train_and_eval(params,

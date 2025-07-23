@@ -18,7 +18,7 @@
 import numpy as np
 import tensorflow as tf
 
-from keypose import nets
+import nets
 
 # num_targs = inp.MAX_TARGET_FRAMES
 num_targs = 5

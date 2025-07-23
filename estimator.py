@@ -27,8 +27,8 @@ Can be instance or class specific, depending on training set.
 import tensorflow as tf
 from tensorflow import estimator as tf_estimator
 
-from keypose import losses as ls
-from keypose import nets
+import losses as ls
+import nets
 
 
 def make_decay_function(step, lr_list):

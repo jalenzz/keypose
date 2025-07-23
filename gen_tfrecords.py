@@ -49,7 +49,7 @@ import sys
 import numpy as np
 import tensorflow as tf
 
-from keypose import utils
+import utils
 
 
 def bytes_feature(values):

@@ -33,10 +33,10 @@ from skimage.transform import warp
 import tensorflow as tf
 import yaml
 
-from keypose import data_pb2 as pb
+import data_pb2 as pb
 
 # Top level keypose directory.
-KEYPOSE_PATH = os.path.join(os.getcwd(), 'keypose')
+KEYPOSE_PATH = os.path.join(os.getcwd())
 
 
 # Read image, including .exr images.

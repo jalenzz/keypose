@@ -21,7 +21,7 @@ import numpy as np
 import skimage as ski
 import tensorflow as tf
 
-from keypose import utils
+import utils
 
 print(cv2)
 print(plt)

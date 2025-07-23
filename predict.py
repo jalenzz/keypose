@@ -34,7 +34,7 @@ import numpy as np
 import skimage as ski
 import tensorflow as tf
 
-from keypose import utils
+import utils
 
 
 def image_as_ubyte(image):
