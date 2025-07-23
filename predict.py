@@ -164,6 +164,10 @@ def predict(model_dir, image_dir, params, camera, camera_input, mesh_file=None):
     else:
       im_mesh = np.zeros(iml_orig.shape, dtype=np.uint8)
 
+    num_kp_actual = uv_pix_raw.shape[0]
+    colors = plt.cm.get_cmap('rainbow')(np.linspace(0, 1.0, num_kp_actual))[:, :3]
+    colors = (colors * 255).astype(np.uint8).tolist()
+    colors = [(color[2], color[1], color[0]) for color in colors]
     for i in range(uv_pix_raw.shape[0]):
       draw_circle(img_l, uv_pix_raw[i, :2], colors[i])
     im_kps = cv2.resize(img_l, None, fx=2, fy=2)
